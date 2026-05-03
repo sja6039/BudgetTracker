@@ -46,16 +46,6 @@ export type Transaction = {
   account_name: string;
 };
 
-export type Account = {
-  account_id: string;
-  name: string;
-  mask: string;
-  type: 'depository' | 'credit';
-  subtype: string;
-  balance: number;
-  institution: string;
-};
-
 export type Statement = {
   id: string;
   filename: string;

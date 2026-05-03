@@ -33,7 +33,7 @@ export const Shell = ({ title, sub, action, children, density = 'spacious' }: Sh
         <div className="sb-brand">
           <div className="sb-mark">B</div>
           <div>
-            <div className="sb-brand-name">BUdget</div>
+            <div className="sb-brand-name">Budget</div>
             <div className="sb-brand-sub">Personal · {monthLabel()}</div>
           </div>
         </div>

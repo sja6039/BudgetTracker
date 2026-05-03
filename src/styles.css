@@ -1,4 +1,4 @@
-/* BUdgetApp — dark theme tokens (ported verbatim from design/styles.css) */
+/* BudgetApp — dark theme tokens (ported verbatim from design/styles.css) */
 :root {
   --bg-0: oklch(0.16 0.008 260);
   --bg-1: oklch(0.20 0.010 260);
@@ -96,15 +96,10 @@
   background: linear-gradient(135deg, var(--avatar-from), var(--avatar-to));
   flex: 0 0 28px;
 }
-.sb-empty { color: var(--text-mute); font-size: 12px; padding: 9px 10px; }
 .sb-foot-text { min-width: 0; }
 .sb-foot-name { font-size: 13px; font-weight: 500; }
 .sb-foot-sub { font-size: 11px; color: var(--text-mute); }
 .sb-foot-icon { margin-left: auto; color: var(--text-mute); display: inline-flex; }
-.sb-account-dot {
-  width: 8px; height: 8px; border-radius: 999px;
-  flex: 0 0 8px; margin-left: 4px;
-}
 
 /* main */
 .main { padding: 28px 36px 40px; min-width: 0; }

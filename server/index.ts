@@ -19,7 +19,6 @@ import {
   overrideCategory,
   listAvailableMonths,
 } from './statements.js';
-import { listAccounts } from './accounts.js';
 import { isConfigured as anthropicConfigured } from './anthropic.js';
 import { addInvestment, deleteInvestment, listEnriched } from './investments.js';
 import { listBudgets, upsertBudget, deleteBudget } from './budgets.js';
@@ -78,8 +77,6 @@ app.post('/api/transactions/:id/category', async (c) => {
   overrideCategory(id, category);
   return c.json({ ok: true });
 });
-
-app.get('/api/accounts', (c) => c.json(listAccounts()));
 
 // ─── Investments ─────────────────────────────────────────────────────────────
 app.get('/api/investments', async (c) => c.json(await listEnriched()));

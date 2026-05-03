@@ -1,5 +1,4 @@
 import type {
-  Account,
   Budget,
   EnrichedInvestment,
   Investment,
@@ -50,7 +49,6 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ category }),
     }),
-  accounts: () => json<Account[]>('/api/accounts'),
   investments: () => json<EnrichedInvestment[]>('/api/investments'),
   addInvestment: (inv: Omit<Investment, 'id' | 'added_date'>) =>
     json<Investment>('/api/investments', {
